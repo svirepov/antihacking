@@ -1,0 +1,182 @@
+/*
+	Стилья для страницы блога
+	Azure by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+html, body {
+}
+
+body {
+	margin: 0em;
+	padding: 0em;
+	font-family: Geometria;
+	font-size: 10pt;
+	color: #525252;
+}
+
+body, #skel-panels-pageWrapper {
+	background: #1F9B79 repeat;
+}
+
+h1, h2, h3 {
+	margin: 0em;
+	padding: 0em;
+	color: #191919;
+	font-family: Geometria;
+}
+
+h2 {
+	padding: 0em 0em 1em 0em;
+	letter-spacing: -.1em;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-style: C;
+}
+
+p {
+	line-height: 170%;
+}
+
+a {
+	color: #1A6377;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+strong {
+	font-weight: bold;
+	color: #191919;
+}
+
+
+
+/* Main Wrapper */
+
+#wrapper {
+}
+
+/* Page Wrapper */
+
+#page-wrapper {
+	overflow: hidden;
+	margin-bottom: 1em;
+	padding: 4em 0em 3em 0em;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,.1);
+}
+
+#page-wrapper a img {
+	display: block;
+	width: 100%;
+	padding: 0em 0em 2em 0em;
+}
+
+
+
+/* Button style 1 */
+
+.button-style1 {
+	display: inline-block;
+	margin: 2em 1em 1em 0em;
+	padding: .5em 1em;
+	background: #1F9B79;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: .80em;
+	color: #FFFFFF;
+	font-family: Geometria-Medium;
+}
+
+
+
+/* List style 4 */
+
+ul.style4 {
+	margin: 0em;
+	padding: 0em 0em 0em 0em;
+	list-style: none;
+}
+
+ul.style4 li {
+	padding: 1.5em 0em 1.5em 0em;
+	border-top: 1px solid #DCDCDC;
+}
+
+ul.style4 .date {
+	padding: 0em 0em 1em 0em;
+	font-weight: bold;
+	font-family: Geometria-Medium;
+}
+
+ul.style4 .date a {
+	color: #2C2C2C;
+}
+
+ul.style4 a {
+	text-decoration: none;
+	color: #5E5E5E;
+}
+
+ul.style4 a:hover {
+	text-decoration: underline;
+}
+
+ul.style4 .first {
+	padding-top: 0em;
+	border-top: none;
+}
+
+/* List style 5 */
+
+ul.style5 {
+	margin: 0em;
+	padding: 0em 0em 0em 0em;
+	list-style: none;
+}
+
+ul.style5 li {
+	padding: 1em 0em 1em 0em;
+	border-top: 1px solid #DCDCDC;
+}
+
+ul.style5 a {
+	text-decoration: none;
+	color: #5E5E5E;
+}
+
+ul.style5 a:hover {
+	text-decoration: underline;
+}
+
+ul.style5 .first {
+	padding-top: 0em;
+	border-top: none;
+}
+
+@font-face{
+	font-family: 'Geometria';
+	src: url('../fonts/Geometria-ExtraLight.ttf');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face{
+	font-family: 'Geometria-Bold';
+	src: url('../fonts/Geometria-Bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face{
+	font-family: 'Geometria-Medium';
+	src: url('../fonts/Geometria-Medium.ttf');
+	font-weight: normal;
+	font-style: normal;
+
+}

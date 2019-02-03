@@ -1,0 +1,72 @@
+html, body, div, p, h1, h2, h3, h4, h5, h6, a, span, img, ol, ul, li, form, input {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+h1{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+h2{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+h3{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+h4{
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+h5{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+h6{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.1;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
