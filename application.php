@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Error</title>
+    <title>Отправлено!</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
