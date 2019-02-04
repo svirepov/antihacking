@@ -1349,7 +1349,7 @@ body {
   padding: 0 0 0 55px;
   position: relative;
 }
-.three-links > ul > li:before {
+.three-links > ul > li:first-child:before {
   content: "";
   position: absolute;
   height: 300%;
@@ -1357,7 +1357,7 @@ body {
   left: 0;
   top: 0;
 }
-.three-links > ul > li:last-child:after {
+.three-links > ul > li:after {
   content: "";
   position: absolute;
   height: 300%;
@@ -1373,6 +1373,9 @@ body {
   font-size: 30px;
   line-height: 10px;
   position: relative;
+}
+.three-links > ul > li:hover > a {
+  color: #01a58d;
 }
 .footer__top {
   padding: 35px 0px 15px;
@@ -3177,6 +3180,10 @@ padding-left: 150px
     margin-bottom: 30px;
   }
   .indent-t-b {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .indent-t-b-three-links {
     padding-top: 40px;
     padding-bottom: 40px;
   }
