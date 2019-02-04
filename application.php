@@ -1,19 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>Создание формы обратной связи</title>
-<meta http-equiv="Refresh" content="4; URL=order.html">
+    <title>Error</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+
+    <link rel="stylesheet" href="styles/libs/popover.css">
+    <link rel="stylesheet" href="styles/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/libs/jquery.formstyler.css">
+    <link rel="stylesheet" href="styles/libs/slick.css">
+    <link rel="stylesheet" href="styles/libs/jquery.fancyboxCss.css">
+
+    <link rel="stylesheet" href="styles/css/main.css">
+
+
+
+
+
 </head>
 <body>
 
+<!-- BEGIN page-box -->
+<div class="page-box">
+
+    <!-- BEGIN header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="wrapper">
+                <div class="top-nav">
+                    <ul>
+                        <li><a href="error.html">Безналичные платежи</a></li>
+                        <li><a href="error.html">152-ФЗ</a></li>
+                        <li><a href="error.html">Модели ФСТЭК</a></li>
+                        <li><a href="error.html">Пентест</a></li>
+                        <li><a href="error.html">Аттестация ГИС</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+
+            <div class="header__box">
+                <div class="header__logo-col">
+                    <div><a href="index.html"><img src="img/logoahfull.png" alt="антихакинг логотип"></a></div>
+                </div>
+                <div class="header__nav-col">
+                    <nav class="header__nav">
+                        <!--burger-menu-->
+                        <div class="navbar-header">
+                            <button type="button" class="btn-nav js-nav-btn">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!--end-burger-menu-->
+
+                        <!--header-navigation-->
+                        <div class="header-navigation js-nav-content">
+                            <ul>
+                                <li><a href="index.html">Главная</a></li>
+                                <li class="dropdown">
+                                    <a href="vectors.html">Угрозы</a>
+                                    <button class="dropdown__btn js-dropdown-btn"></button>
+                                    <ul class="dropdown-menu js-dropdown-content">
+                                        <li><a href="vectors.html">Векторы атак</a></li>
+                                        <li><a href="Vulnerabilities.html">Ключевые уязвимости</a></li>
+                                        <li><a href="goals.html">Цели атак</a></li>
+                                        <li><a href="victims.html">Жертвы</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="service_main.html">Аудит</a>
+                                    <button class="dropdown__btn js-dropdown-btn"></button>
+                                    <ul class="dropdown-menu js-dropdown-content">
+                                        <li><a href="service1.html">Методология</a></li>
+                                        <li><a href="service2.html">Этапы</a></li>
+                                        <li><a href="service4.html">Классификация</a></li>
+                                        <li><a href="service5.html">Стандарты</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="service_main.html">Решения</a>
+                                    <button class="dropdown__btn js-dropdown-btn"></button>
+                                    <ul class="dropdown-menu js-dropdown-content">
+                                        <li><a href="service1.html">Решение 1</a></li>
+                                        <li><a href="service2.html">Решение 2</a></li>
+                                        <li><a href="service3.html">Решение 3</a></li>
+                                        <li><a href="service4.html">Решение 4</a></li>
+                                        <li><a href="service5.html">Баг Баунти</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="blog.html">Блог</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="about.html">О нас</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--header-navigation-->
+
+
+                    </nav>
+                </div>
+                <div class="header__contact-col">
+                    <a href="tel:+74951082412" class="header-phone">+7 (495) 108-24-12</a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </header>
+
+<div class="page-box-content">
+    <div class="error-page gray-bg">
+        <div class="container">
+            <div class="error-page__box">
+                <div class="error-page__title">Спасибо</div>
+                <div class="error-page__number">Ваша заявка получена</div>
+                <div class="error-page__desc">Мы скоро свяжемся с вами!<br>Вернуться <a href="index.html" style="color:cornflowerblue">назад</a></div>
+                <div class="error-page__link"></div>
+            </div>
+        </div>
+    </div>
+  </div>
 <?php
 
 $sendto   = "sales@antihacking.ru"; // почта, на которую будет приходить письмо
 $username = $_POST['name'];   // сохраняем в переменную данные полученные из поля c именем
 $usertel = $_POST['telephone']; // сохраняем в переменную данные полученные из поля c телефонным номером
 $usermail = $_POST['email']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
-$usertext = $_POST ['text'];
+$usertext = $_POST['text'];
 
 // Формирование заголовка письма
 $subject  = "Новое сообщение";
@@ -27,17 +151,138 @@ $msg  = "<html><body style='font-family:Arial,sans-serif;'>";
 $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Cообщение с сайта</h2>\r\n";
 $msg .= "<p><strong>От кого:</strong> ".$username."</p>\r\n";
 $msg .= "<p><strong>Почта:</strong> ".$usermail."</p>\r\n";
-$msg .= "<p><strong>Телефон:</strong> ".$usertel."</p>\r\n";
+$msg .= "<p><strong>Сайт:</strong> ".$usertel."</p>\r\n";
 $msg .= "</body></html>";
 
 // отправка сообщения
 if(@mail($sendto, $subject, $msg, $headers)) {
-	echo "index.html";
+    echo "<center><img src='images/spasibo.png'></center>";
 } else {
-	echo "<center><img src='images/service2.svg'></center>";
+    echo "<center><img src='images/ne-tpravleno.png'></center>";
 }
 
 ?>
+
+
+<footer class="footer" style="background: #252525;">
+    <div class="wrapper">
+        <div class="footer__top">
+            <div class="footer__top-row">
+                <!--footer__left-->
+                <div class="footer__left">
+                    <div><a href="index.html"><img class="logo_footer" src="img/globalit.png" alt="антихакинг логотип"></a></div>
+                    <div class="footer__address">
+                        117105, г. Москва,
+                        <div>Варшавское шоссе 28А</div>
+                    </div>
+                    <a href="mailto:info@globalit.ru" class="footer__mail">info@globalit.ru</a>
+                    <a href="tel:+74951082412" class="footer__phone">+7 (495) 108-24-12</a>
+                    <div class="footer__soc">
+                        <div class="social-wrap">
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/globalitrussia" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/globalitrus" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--footer__left-->
+
+
+                <!--footer__right-->
+                <div class="footer__right">
+                    <div class="footer__nav-row">
+                        <!--footer__nav-col-->
+                        <div class="footer__nav-col">
+                            <div class="footer__nav">
+                                <div class="footer__nav-title">Уязвимости</div>
+                                <ul class="footer__nav-list">
+                                    <li><a href="vulnerabilities.html">Подмена запроса</a></li>
+                                    <li><a href="vulnerabilities.html">DDoS атаки</a></li>
+                                    <li><a href="vulnerabilities.html">Уязвимости протоколов</a></li>
+                                    <li><a href="vulnerabilities.html">Майнинг на ресурсах</a></li>
+                                    <li><a href="vulnerabilities.html">Инъекции</a></li>
+                                    <li><a href="vulnerabilities.html">Межсайтовый скриптинг</a></li>
+                                    <li><a href="vulnerabilities.html">Непроверенные переадресации</a></li>
+                                    <li><a href="vulnerabilities.html">Компрометации ресурса/a></li>
+                                </ul>
+                            </div>
+                        </div><!--footer__nav-col-->
+                        <!--footer__nav-col-->
+                        <div class="footer__nav-col">
+                            <div class="footer__nav">
+                                <div class="footer__nav-title">Сферы бизнеса</div>
+                                <ul class="footer__nav-list">
+                                    <li><a href="txt-page.html">Финансовая</a></li>
+                                    <li><a href="txt-page.html">Реальный</a></li>
+                                    <li><a href="txt-page.html">B2C</a></li>
+                                    <li><a href="txt-page.html">B2B</a></li>
+                                    <li><a href="txt-page.html">Медиа</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__nav">
+                                <div class="footer__nav-title">О проекте</div>
+                                <ul class="footer__nav-list">
+                                    <li><a href="about.html">Команда</a></li>
+                                    <li><a href="about.html">Вакансии</a></li>
+                                    <li><a href="about.html">Контакты </a></li>
+                                </ul>
+                            </div>
+                        </div><!--footer__nav-col-->
+                        <!--footer__nav-col-->
+                        <div class="footer__nav-col">
+                            <div class="footer__nav">
+                                <div class="footer__nav-title">Аудит</div>
+                                <ul class="footer__nav-list">
+                                    <li><a href="metod.html">Black box</a></li>
+                                    <li><a href="metod.html">White box</a></li>
+                                    <li><a href="metod.html">Gray box </a></li>
+                                    <li><a href="metod.html">Pentest</a></li>
+                                    <li><a href="metod.html">Аудит безопасности сайта</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__nav">
+                                <div class="footer__nav-title">Блог</div>
+                                <ul class="footer__nav-list">
+                                    <li><a href="txt-page.html">Статьи</a></li>
+                                    <li><a href="txt-page.html">Ссылки</a></li>
+                                </ul>
+                            </div>
+                        </div><!--footer__nav-col-->
+                    </div>
+                </div><!--footer__right-->
+
+
+            </div>
+
+
+        <div class="footer__bottom">
+            <div class="footer__bottom-txt">
+                © 2019 ООО "Глобал АйТи". Все права защищены</div>
+            <div><a href="//terms" class="footer__bottom-txt">Персональные данные</a></div>
+        </div>
+    </div>
+</footer>
+
+
+</div>
+<!-- END page-box -->
+
+
+
+
+<!-- libraries -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+
+<script src="js/inputmask.js"></script>
+<script src="js/jquery.inputmask.js"></script>
+
+
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+
+<!-- custom scripts -->
+<script src="js/custom.js"></script>
 
 </body>
 </html>
