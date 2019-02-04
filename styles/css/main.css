@@ -423,7 +423,6 @@ body {
 }
 .error-page__title {
   font-size: 48px;
-  text-transform: uppercase;
   margin-bottom: 20px;
   font-weight: 300;
 }
@@ -3506,6 +3505,7 @@ padding-left: 150px
     padding: 0px 25px 20px;
   }
 }
+
 #application {
     width: 475px;
     margin: 0 auto;
