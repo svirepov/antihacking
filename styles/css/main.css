@@ -3506,4 +3506,74 @@ padding-left: 150px
     padding: 0px 25px 20px;
   }
 }
+#application {
+    width: 475px;
+    margin: 0 auto;
+}
+
+/*Стили полей для ввода*/
+#applicationName, #applicationEmail, #applicationTelephone, #applicationAboutproject {
+    width: 50%;
+    height: 73px;
+    background: none;
+    margin-top: 25px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    text-align: center;
+    color: #01a58d;
+    font-size: 18px;
+  }
+    /*Стили полей при клике по ним*/
+#applicationName:focus, #applicationEmail:focus, #applicationTelephone:focus, #applicationAboutproject:focus {
+    border: 1px solid #30ad64;
+}
+
+/*Стили текста, выводящегося в placeholder*/
+::-webkit-input-placeholder {
+    color: #efefef;
+    font-family: 'Geometria';
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+::-moz-placeholder  {
+    color: #01a58d;
+    font-family: 'Geometria';
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}  /* Firefox 19+ */
+
+:-moz-placeholder {
+    color: #01a58d;
+    font-family: 'Geometria';
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}  /* Firefox 18- */
+
+:-ms-input-placeholder {
+    color: #01a58d;
+    font-family: 'Geometria';
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+::placeholder {
+    color: #01a58d;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  }
+    /*Стили для кнопки*/
+.applicationButton {
+    margin-top: 25px;
+    background: #252525;
+    border: none;
+    width: 50%;
+    height: 73px;
+    border-radius: 40px;
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Geometria', Geometria;
+    cursor: pointer;
+}
+.applicationButton:hover {
+    background: #01a58d;
+    transition: .6s;
+}
+
 /*# sourceMappingURL=../maps/main.css.map */
