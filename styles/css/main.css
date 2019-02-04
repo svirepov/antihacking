@@ -1332,6 +1332,7 @@ body {
 .three-links {
   background: #252525;
   padding-left: 70px;
+  border-bottom-color: #252525;
 }
 .three-links > ul {
     list-style: none;
@@ -1348,22 +1349,6 @@ body {
   margin-left: 50px;
   padding: 0 0 0 55px;
   position: relative;
-}
-.three-links > ul > li:first-child:before {
-  content: "";
-  position: absolute;
-  height: 300%;
-  border-left: 1px solid #5E5E5E;
-  left: 0;
-  top: 0;
-}
-.three-links > ul > li:after {
-  content: "";
-  position: absolute;
-  height: 300%;
-  border-left: 1px solid #5E5E5E;
-  left: 0;
-  top: 0;
 }
 .three-links > ul > li > a {
   vertical-align: top;
@@ -3180,10 +3165,6 @@ padding-left: 150px
     margin-bottom: 30px;
   }
   .indent-t-b {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .indent-t-b-three-links {
     padding-top: 40px;
     padding-bottom: 40px;
   }
