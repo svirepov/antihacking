@@ -19,7 +19,7 @@ $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Заявк�
 $msg .= "<p><strong>От кого:</strong> ".$username."</p>\r\n";
 $msg .= "<p><strong>Почта:</strong> ".$usermail."</p>\r\n";
 $msg .= "<p><strong>Телефон:</strong> ".$usertel."</p>\r\n";
-$msg .= "<p><strong>О проекте:</strong> ".$usertel."</p>\r\n";
+$msg .= "<p><strong>О проекте:</strong> ".$usertext."</p>\r\n";
 $msg .= "</body></html>";
 
 // отправка сообщения
