@@ -18,12 +18,25 @@
 
     <link rel="stylesheet" href="styles/css/main.css">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53977087-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-
-
+      gtag('config', 'UA-53977087-3');
+    </script>
 
 </head>
 <body>
+
+      <script>
+        fbq('track', 'CompleteRegistration', {
+          value: Отправка заявки,
+          currency: '1',
+        });
+      </script>
 
 <!-- BEGIN page-box -->
 <div class="page-box">

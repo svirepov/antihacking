@@ -7,7 +7,7 @@ $usermail = $_POST['email']; // сохраняем в переменную да�
 $usertext = $_POST['text'];
 
 // Формирование заголовка письма
-$subject  = "Новое сообщение";
+$subject  = "Заявка";
 $headers  = "From: " . strip_tags($usermail) . "\r\n";
 $headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
@@ -15,10 +15,11 @@ $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
 
 // Формирование тела письма
 $msg  = "<html><body style='font-family:Arial,sans-serif;'>";
-$msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Cообщение с сайта</h2>\r\n";
+$msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Заявка с сайта</h2>\r\n";
 $msg .= "<p><strong>От кого:</strong> ".$username."</p>\r\n";
 $msg .= "<p><strong>Почта:</strong> ".$usermail."</p>\r\n";
-$msg .= "<p><strong>Сайт:</strong> ".$usertel."</p>\r\n";
+$msg .= "<p><strong>Телефон:</strong> ".$usertel."</p>\r\n";
+$msg .= "<p><strong>О проекте:</strong> ".$usertel."</p>\r\n";
 $msg .= "</body></html>";
 
 // отправка сообщения
